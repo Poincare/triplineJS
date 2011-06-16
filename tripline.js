@@ -21,3 +21,5 @@ var TL = function() {
     
     this.d_gebn = document.getElementsByName;
 };
+
+var _ = new TL();
