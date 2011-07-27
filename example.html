@@ -1,62 +1,30 @@
 <html>
 <head>
     <script src="tripline.js">
-        TL = function() {
-        //document functions
-        //document.getElementById
-        this.dgebi = function (id) {
-            return document.getElementById(id);
-        };
-        
-        //document.getElementsByTagName
-        this.dgebtn = function(name) {
-            return document.getElementsByTagName(name);   
-        };
-        
-        //document.getElementsByName
-        this.dgebn = function(name) {
-            return document.getElementsByName(name);   
-        };
-        
-        //document.createAttribute
-        this.dca = function(attname) {
-            return document.createAttribute(attname);  
-        };
-        
-        //document.createComment
-        this.dcc = function(text) {
-            return document.createComment(text);   
-        };
-        
-        //document.createElement
-        this.dce = function(elname) {
-            return document.createElement(elname);   
-        };
-        
-        //document.createTextNode
-        this.dctn = function(text) {
-            return document.createTextNode(text);    
-        };
-        
-        //document.getElementsByClassName - No IE support
-        this.dgebcn = function(clas) {
-            return document.getElementsByClassName(clas);
-        };
-        
-        //window functions
-        this.wa = function(str) {
-           return alert(str);    
-        };
-    };
     </script>
+    
     <script>
-        var xy = new TL();
-        xy.wa("Hello!");
+        //not very high quality code, but, you get the idea
+        var t = new TL();
+        t.wa("Hello!");
+        var mydiv = xy.dgebi("some_id");
+        
+        function replace_text() {
+            mydiv.innerHTML = "<h1>Tripline.JS</h1>";    
+        }
+        
+        t.wst("replace_text()", 5000);
+        
     </script>
+
+    
 </head>
 
 <body>
 Hi.
+    <div id="some_id">
+        <h1>Tripline</h1>
+    </div>
 </body>
 
 </html>

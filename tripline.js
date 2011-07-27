@@ -41,7 +41,14 @@ TL = function() {
     };
     
     //window functions
+    
+    //alert
     this.wa = function(str) {
        return alert(str);    
+    };
+    
+    //setTimeout()
+    this.wst = function(code, millisec) {
+        return setTimeout(code, millisec);
     };
 };
