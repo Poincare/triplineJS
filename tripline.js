@@ -37,7 +37,11 @@ TL = function() {
     
     //document.getElementsByClassName - No IE support
     this.dgebcn = function(clas) {
-        document.getElementsByClassName(clas);
+        return document.getElementsByClassName(clas);
     };
     
+    //window functions
+    this.wa = function(str) {
+       return alert(str);    
+    };
 };
