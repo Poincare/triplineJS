@@ -2,7 +2,7 @@ TL = function() {
     //document functions
     //document.getElementById
     this.dgebi = function (id) {
-        return document.getElementById(id);
+        console.log(document.getElementById(id));
     };
     
     //document.getElementsByTagName
@@ -51,4 +51,51 @@ TL = function() {
     this.wst = function(code, millisec) {
         return setTimeout(code, millisec);
     };
+    
+    //blur
+    this.blr = function() {
+        return b();   
+    };
+    
+    //confirm
+    this.cnfrm = function(msg) {
+        return confirm(msg);   
+    };
+    
+    //focus
+    this.fcs = function() {
+        return focus();   
+    };
+    
+    //moveTo(x,y)
+    this.mvt = function(x, y) {
+        return moveTo(x,y);
+    };
+    
+    //moveby
+    this.mvb = function(dx, dy) {
+        return moveBy(dx, dy);
+    };
+    
+    //open
+    this.opn = function(url) {
+        return open(url);   
+    };
+    
+    //print
+    this.pr = function() {
+        return print();
+    };
+    
+    //prompt
+    this.prpt = function(msg, input) {
+         input = typeof(input) != 'undefined' ? b : '';
+         return prompt(msg, input);
+    };
+    
+    //scrollBy
+    this.scllb = function(dx, dy) {
+        return scllb(dx, dy);   
+    };
+    
 };
